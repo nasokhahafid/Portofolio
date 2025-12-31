@@ -3,9 +3,8 @@
 @section('content')
     <!-- Hero Section -->
     <section id="home" class="relative bg-navy-900/10 text-slate-300 min-h-screen flex items-center pt-20 overflow-hidden">
-        <!-- Background accents -->
-        <div class="absolute top-0 right-0 w-1/3 h-1/3 bg-gold-600/10 rounded-full blur-[100px] pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-1/4 h-1/4 bg-blue-900/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <!-- Cursor Light Effect -->
+        <div id="cursor-light" class="fixed top-0 left-0 w-[600px] h-[600px] bg-gold-500/20 rounded-full blur-[120px] pointer-events-none mix-blend-screen opacity-30 transition-opacity duration-300 ease-out -translate-x-1/2 -translate-y-1/2 will-change-transform z-0"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -29,7 +28,7 @@
                         <div class="absolute inset-0 border-2 border-slate-700/50 rounded-full animate-[spin_10s_linear_infinite]"></div>
                         <div class="absolute inset-4 border border-gold-500/30 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
                         <div class="absolute inset-8 rounded-full overflow-hidden border-4 border-navy-800 shadow-2xl group">
-                             <img src="images/profile.jpg" alt="Profile" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0">
+                             <img src="https://ui-avatars.com/api/?name=Nasokha&background=0D9488&color=fff&size=512" alt="Profile" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0">
                         </div>
                      </div>
                 </div>
@@ -264,4 +263,27 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cursorLight = document.getElementById('cursor-light');
+            let timeout;
+
+            document.addEventListener('mousemove', function(e) {
+                // Move the light
+                cursorLight.style.left = e.clientX + 'px';
+                cursorLight.style.top = e.clientY + 'px';
+
+                // Brighten the light when moving (full opacity)
+                cursorLight.style.opacity = '1';
+
+                // Clear existing timeout
+                clearTimeout(timeout);
+
+                // Dim the light after stopping (wait 100ms)
+                timeout = setTimeout(function() {
+                    cursorLight.style.opacity = '0.3';
+                }, 100);
+            });
+        });
+    </script>
 @endsection
