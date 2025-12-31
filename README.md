@@ -1,7 +1,9 @@
 <p align="center">
-  <a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo"></a>
-  <a href="https://tailwindcss.com" target="_blank"><img src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/master/.github/logo-light.svg" width="300" alt="Tailwind CSS Logo"></a>
-  <a href="https://vitejs.dev" target="_blank"><img src="https://vitejs.dev/logo.svg" width="100" alt="Vite Logo"></a>
+  <a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="180" alt="Laravel Logo"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://tailwindcss.com" target="_blank"><img src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/master/.github/logo-light.svg" width="180" alt="Tailwind CSS Logo"></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://vitejs.dev" target="_blank"><img src="https://vitejs.dev/logo.svg" width="50" alt="Vite Logo"></a>
 </p>
 
 # Portfolio Project
